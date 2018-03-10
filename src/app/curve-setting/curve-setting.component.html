@@ -1,0 +1,21 @@
+<div class="col-md-12">
+  <!-- Custom Tabs (Pulled to the right) -->
+  <div class="nav-tabs-custom">
+    <ul class="nav nav-tabs">
+      <li *ngFor="let tab of tabs" [class.active]="this.currentTabId==tab.id">
+        <a href="javascript:;" (click)="nav(tab)" data-toggle="tab"><i [class]="tab.icon"></i><span>{{tab.name}}</span></a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane" [class.active]="this.currentTabId==1">
+        <app-curve-set></app-curve-set>
+      </div>
+      <div class="tab-pane" [class.active]="this.currentTabId==2">
+        <app-point-reference></app-point-reference>
+      </div>
+      <div class="tab-pane" [class.active]="this.currentTabId==3">
+        <app-system-curve></app-system-curve>
+      </div>
+    </div>
+  </div>
+</div>
