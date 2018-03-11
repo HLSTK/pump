@@ -6,15 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./curve-table.component.css']
 })
 export class CurveTableComponent implements OnInit {
-
+  curveFunctionRows:Array<CurveFunctionRow> = new Array()
   constructor() { }
 
   ngOnInit() {
+    for(var i = 0; i < 20; i++)
+    {
+      this.curveFunctionRows.push(new CurveFunctionRow(
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+        "...",
+      ));
+    }
   }
 
 }
 
-export class CurveFunctionTable
+export class CurveFunctionRow
 {
   constructor(
     public _type:string,
