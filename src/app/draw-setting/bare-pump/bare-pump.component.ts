@@ -13,3 +13,11 @@ export class BarePumpComponent implements OnInit {
   }
 
 }
+
+export class BarePump{
+  constructor(
+    public pumpModel:number,
+    public _type:number,
+    public flangeRating:number
+  ){}
+}
