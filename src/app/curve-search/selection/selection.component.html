@@ -77,70 +77,70 @@
   <div class="col-md-6">
     <div class="form-group">
       <label>
-        <input type="checkbox" class="flat-red" checked>
+        <input type="checkbox" class="flat-red" [checked]="selection.kp">
         KP
       </label>
       <label>
-        <input type="checkbox" class="flat-red">
+        <input type="checkbox" class="flat-red" [checked]="selection.kpv">
         KPV
       </label>
       <label>
-        <input type="checkbox" class="flat-red" checked>
+        <input type="checkbox" class="flat-red" [checked]="selection.lf">
         LF
       </label>
       <label>
-        <input type="checkbox" class="flat-red">
+        <input type="checkbox" class="flat-red" [checked]="selection.lfe">
         LFE
       </label>
     </div>
     <div class="form-group">
       <label>
-        <input type="checkbox" class="flat-red" checked>
+        <input type="checkbox" class="flat-red" [checked]="selection.cl">
         CL
       </label>
       <label>
-        <input type="checkbox" class="flat-red">
+        <input type="checkbox" class="flat-red" [checked]="selection.cls">
         CLS
       </label>
       <label>
-        <input type="checkbox" class="flat-red" checked>
+        <input type="checkbox" class="flat-red" [checked]="selection.cvm">
         CVM
       </label>
       <label>
-        <input type="checkbox" class="flat-red">
+        <input type="checkbox" class="flat-red" [checked]="selection.chm">
         CHM
       </label>
     </div>
     <div class="form-group">
       <label>
-        <input type="checkbox" class="flat-red" checked>
+        <input type="checkbox" class="flat-red" [checked]="selection.kpe">
         KPE
       </label>
       <label>
-        <input type="checkbox" class="flat-red">
+        <input type="checkbox" class="flat-red" [checked]="selection.kpev">
         KPEV
       </label>
       <label>
-        <input type="checkbox" class="flat-red" checked>
+        <input type="checkbox" class="flat-red" [checked]="selection.vl">
         VL
       </label>
       <label>
-        <input type="checkbox" class="flat-red">
+        <input type="checkbox" class="flat-red" [checked]="selection.vls">
         VLS
       </label>
-      <div class="form-group">
-        <label>
-          <input type="checkbox" class="flat-red" checked>
-          LC
-        </label>
-        <label>
-          <input type="checkbox" class="flat-red">
-          CLD
-        </label>
-      </div>
-      <div>
-        <button>ALL</button>
-      </div>
+    </div>
+    <div class="form-group">
+      <label>
+        <input type="checkbox" class="flat-red" [checked]="selection.lc">
+        LC
+      </label>
+      <label>
+        <input type="checkbox" class="flat-red" [checked]="selection.cld">
+        CLD
+      </label>
+    </div>
+    <div>
+      <button (click)="selectAll()">ALL</button>
     </div>
   </div>
 </div>
