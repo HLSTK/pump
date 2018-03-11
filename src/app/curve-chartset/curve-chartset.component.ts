@@ -14,8 +14,8 @@ export class CurveChartsetComponent implements OnInit {
 
   ngOnInit() {
     this.tabs = [
-      new Tab(1, 'Curve Setting', './', 'fa fa-circle-o'),
-      new Tab(2, 'Chart', './curve-chart', 'fa fa-circle')
+      new Tab(1, 'Curve Setting', './', 'fa fa-gear'),
+      new Tab(2, 'Chart', './curve-chart', 'fa fa-line-chart')
     ];
     this.currentTabId = 2;
   }

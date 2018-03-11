@@ -14,8 +14,8 @@ export class CurveSettingComponent implements OnInit {
 
   ngOnInit() {
     this.tabs = [
-      new Tab(1, 'Curve Set', './', 'fa fa-circle-o'),
-      new Tab(2, 'Point reference', './point-reference', 'fa fa-circle'),
+      new Tab(1, 'Curve Set', './', 'fa fa-gear'),
+      new Tab(2, 'Point reference', './point-reference', 'fa fa-dot-circle-o'),
       new Tab(3, 'System Curve', './system-curve', 'fa fa-archive')
     ];
     this.currentTabId = 1;
