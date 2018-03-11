@@ -5,7 +5,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { FormsModule} from '@angular/forms';
 import { ContentComponent } from './app-content/content.component';
-import { HeaderComponent } from './app-header/header.component';
 import { FooterComponent } from './app-footer/footer.component';
 import { MenuComponent } from './app-menu/menu.component';
 import { CurveContentComponent } from './curve-content/curve-content.component';
@@ -27,6 +26,7 @@ import { CompletePumpSetComponent } from './draw-setting/complete-pump-set/compl
 import { BarePumpComponent } from './draw-setting/bare-pump/bare-pump.component';
 import { Page404Component } from './page404/page404.component';
 import { CurveChartsetComponent } from './curve-chartset/curve-chartset.component';
+import { HeaderComponent } from './app-header/header.component';
 
 const routeConfig: Routes = [
   {path: '', redirectTo: '/curve-content', pathMatch: 'full' },
@@ -46,7 +46,6 @@ const routeConfig: Routes = [
   declarations: [
     AppComponent,
     ContentComponent,
-    HeaderComponent,
     FooterComponent,
     MenuComponent,
 
@@ -68,7 +67,8 @@ const routeConfig: Routes = [
     CompletePumpSetComponent,
     BarePumpComponent,
     Page404Component,
-    CurveChartsetComponent
+    CurveChartsetComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
