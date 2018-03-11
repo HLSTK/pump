@@ -13,3 +13,19 @@ export class MultiSpeedComponent implements OnInit {
   }
 
 }
+export class MultiSpeed
+{
+  constructor(
+    public _type:String,
+    public trimDia:String,
+    public poles:String,
+    public effi:String,
+    public frequency:String,
+    public speed:String,
+    public q:number,
+    public h:number,
+    public multiConversion:number,
+    //TODO
+  )
+  {}
+}

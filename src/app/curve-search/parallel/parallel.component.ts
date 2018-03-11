@@ -13,3 +13,19 @@ export class ParallelComponent implements OnInit {
   }
 
 }
+
+export class Parallel
+{
+  constructor(
+    public _type:string,
+    public trimDia:String,
+    public poles:String,
+    public effi:String,
+    public frequency:String,
+    public speed:number,
+    public q:number,
+    public h:number,
+    public multiConversion:number,
+    public connectionNum:number
+  ){}
+}
