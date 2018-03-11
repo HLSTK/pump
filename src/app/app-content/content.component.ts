@@ -7,8 +7,8 @@ import {NavigationEnd, Router} from '@angular/router';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-  pageTitle = "";
-  pageDesc = "";
+  pageTitle = "泵曲线";
+  pageDesc = "泵曲线图形参数设置与查询";
   sublevel = "";
 
   constructor(public router: Router) {
