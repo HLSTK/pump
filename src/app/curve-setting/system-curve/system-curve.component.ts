@@ -13,3 +13,10 @@ export class SystemCurveComponent implements OnInit {
   }
 
 }
+
+export class SystemCurve{
+  constructor(
+    public systemCurve:boolean,
+    public staticHead:number
+  ){}
+}

@@ -13,3 +13,10 @@ export class CurveSetComponent implements OnInit {
   }
 
 }
+
+export class CurveSet{
+  constructor(
+    public workArea:boolean,
+    public maxMinDiaCurve:boolean
+  ){}
+}
