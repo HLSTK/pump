@@ -9,6 +9,7 @@ import {NavigationEnd, Router} from '@angular/router';
 export class ContentComponent implements OnInit {
   pageTitle = "";
   pageDesc = "";
+  sublevel = "";
 
   constructor(public router: Router) {
     router.events
@@ -17,16 +18,19 @@ export class ContentComponent implements OnInit {
         {
           this.pageTitle = '泵曲线';
           this.pageDesc = '泵曲线图形参数设置与查询';
+          this.sublevel = 'curve';
         }
         else if(event.url == '/draw-content')
         {
           this.pageTitle = '图纸';
           this.pageDesc = '泵图纸参数设置与查询';
+          this.sublevel = 'draw';
         }
     })
   }
 
   ngOnInit() {
+    this.sublevel = 'curve';
   }
 
 }

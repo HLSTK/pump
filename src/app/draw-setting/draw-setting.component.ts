@@ -15,7 +15,7 @@ export class DrawSettingComponent implements OnInit {
   ngOnInit() {
     this.tabs = [
       new Tab(1, 'Complete Pump Set', './', 'fa fa-gears'),
-      new Tab(2, 'Bare Pump', './', 'fa fa-asterisk')
+      new Tab(2, 'Bare Pump', './', 'fa fa-gear')
     ];
     this.currentTabId = 1;
   }
